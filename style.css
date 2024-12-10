@@ -1,0 +1,87 @@
+
+
+
+
+body{
+    background-image: url(./src/img/metal-grunge-background-with-scratches-stains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.box{
+    background-color: rgba(255, 255, 255, 0.329);
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.front img{
+    border-radius: 390px;
+}
+
+.back img{
+    border-radius: 390px;
+  }
+  .front .back img:hover{
+    width: 270px;
+    text-align: center;
+  background-color: rgb(255, 0, 0);
+  border-radius: 360px;
+  align-items: center;
+  
+  
+  }
+
+
+
+
+
+.coin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coin {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.rotate {
+    animation: rotation 0.3s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}

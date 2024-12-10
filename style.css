@@ -85,3 +85,90 @@ body{
         transform: rotateY(360deg);
     }
 }
+
+
+/*Responsive  */
+@media (max-width: 415px) {  
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-image: url(../src/img/Fundo.jpg);
+    background-size: cover!important;
+   
+  }
+
+  .youtube-icon {
+
+      border-radius: 390px;
+    
+        /* ... outras propriedades ... */
+        animation: girar 5s infinite ease-in-out;
+        
+      }
+      
+      @keyframes girar {
+        0% {
+          transform: rotateY(0deg) ;
+        }
+        50% {
+          transform: rotateY(180deg) ;
+    
+    
+        }
+        100% {
+            transform: rotateY(360deg) ;
+      
+      
+          }
+       
+    }
+    .youtube-icon img {
+      border-radius: 390px;
+    }
+    .youtube-icon:hover{
+      width: 270px;
+      text-align: center;
+    background-color: rgb(255, 0, 0);
+    border-radius: 360px;
+    align-items: center;
+    
+    
+    }
+   
+    
+    .box{
+    background-color: rgba(255, 255, 255, 0.199);
+        margin-top:240px;
+        margin-bottom: 289px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

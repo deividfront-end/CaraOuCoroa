@@ -83,26 +83,3 @@ body{
     animation: rotation 0.3s linear infinite;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .box {
-        margin-top: 20px;
-    }
-
-    .rodape {
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 415px) {
-    body {
-        background-image: url(../src/img/Fundo.jpg);
-        background-size: cover;
-    }
-
-    .box {
-        margin-top: 10px;
-    }
-
-   
-}
